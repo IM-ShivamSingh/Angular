@@ -3,10 +3,19 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('first');
+  counter:number=0;
+  increment(){
+    this.counter++;
+  }
+  reset(){
+    this.counter=0;
+  }
+  decrement(){
+    this.counter--;
+  }
 }
