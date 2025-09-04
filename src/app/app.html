@@ -1,17 +1,15 @@
-<header style="display: flex; justify-content: space-between;background-color: aqua;border-radius: 8px;">
-  <h1 style="align-items: center;color: blue;margin: auto;">Counter App</h1>
-  <h3 style="align-items: center;color: rgb(38, 38, 40);margin-right: 10px;">Created by shivam</h3>
+<header style="display: flex; align-items: center; justify-content: space-between; background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%); border-radius: 12px; padding: 20px 32px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+  <h1 style="color: #1a237e; margin: 0; font-size: 2.5rem; font-weight: 700; letter-spacing: 2px;">Counter App</h1>
+  <h3 style="color: #263238; margin: 0; font-weight: 400; font-size: 1.1rem;">Created by Shivam</h3>
 </header>
-<div style="display: flex;justify-content: center;margin-top: 50px;">
-  <h1 style="text-align: center;margin: 20px auto; background-color: gray;display: inline-block;padding: 15px;border-radius: 8px; color: azure;">{{counter}}</h1>
-</div>
 
-
-<div style="display: flex;justify-content: center;">
-  <button style="margin: 10px;padding: 10px;border-radius:8px;background-color: red;color: white;cursor: pointer;" (click)="decrement()">Decrement</button>
-  <button style="margin: 10px;padding: 10px;border-radius:8px;background-color: blue;color: white;cursor: pointer;" 
-  (click)="reset()"
-  >Reset</button>
-  <button style="margin: 10px;padding: 10px;border-radius:8px;background-color: green;color: white;cursor: pointer;"
-  (click)="increment()">Increment</button>
-</div>
+<main style="display: flex; flex-direction: column; align-items: center; margin-top: 60px;">
+  <div style="background: #212121; color: #fff; padding: 32px 64px; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 40px;">
+    <span style="font-size: 3rem; font-weight: 600; letter-spacing: 1px;">{{counter}}</span>
+  </div>
+  <div style="display: flex; gap: 24px;">
+    <button style="padding: 14px 32px; border-radius: 8px; background: #e53935; color: #fff; border: none; font-size: 1.1rem; font-weight: 500; box-shadow: 0 2px 8px rgba(229,57,53,0.15); cursor: pointer; transition: background 0.2s;" (click)="decrement()" onmouseover="this.style.background='#b71c1c'" onmouseout="this.style.background='#e53935'">Decrement</button>
+    <button style="padding: 14px 32px; border-radius: 8px; background: #3949ab; color: #fff; border: none; font-size: 1.1rem; font-weight: 500; box-shadow: 0 2px 8px rgba(57,73,171,0.15); cursor: pointer; transition: background 0.2s;" (click)="reset()" onmouseover="this.style.background='#1a237e'" onmouseout="this.style.background='#3949ab'">Reset</button>
+    <button style="padding: 14px 32px; border-radius: 8px; background: #43a047; color: #fff; border: none; font-size: 1.1rem; font-weight: 500; box-shadow: 0 2px 8px rgba(67,160,71,0.15); cursor: pointer; transition: background 0.2s;" (click)="increment()" onmouseover="this.style.background='#1b5e20'" onmouseout="this.style.background='#43a047'">Increment</button>
+  </div>
+</main> 
